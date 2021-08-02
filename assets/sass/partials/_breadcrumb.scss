@@ -1,0 +1,22 @@
+.breadcrumb-element {
+    padding: 5px 0;
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+    li {
+        margin-right: 3px;
+
+        a {
+            font-size: 12px;
+            line-height: 18px;
+            color: $color-5;
+        }
+    }
+
+    .active-link {
+        color: $text-color;
+    }
+}

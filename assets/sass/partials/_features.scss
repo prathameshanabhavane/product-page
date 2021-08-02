@@ -1,0 +1,130 @@
+.features-element,
+.content-element-grid {
+    h2 {
+        @extend .font-poppins;
+        font-size: 14px;
+        line-height: 24px;
+        background-color: $color-3;
+        padding: 15px 25px;
+        color: $text-color;
+        letter-spacing: 1px;
+        .fa {
+            font-size: 15px;
+            padding-right: 10px;
+            color: $color-4;
+        }
+    }
+
+    h3 {
+        letter-spacing: 1px;
+    }
+
+    h3,
+    h4 {
+        @extend .font-poppins;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 3px 0;
+        color: $text-color;
+        -ms-flex: 0 0 30%;
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    h4 {
+        font-weight: 400;
+        color: $color-5;
+        -ms-flex: 0 0 70%;
+        flex: 0 0 70%;
+        max-width: 70%
+    }
+
+    .features-list-element,
+    .content-element {
+        padding: 20px 30px;
+    }
+
+    .features-list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: $color-2;
+        padding: 5px 0;
+    }
+
+}
+
+.feature-row,
+.content-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-row {
+    box-shadow: $box-shadow;
+    overflow: hidden;
+}
+
+.features-grid {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    padding: 0;
+    box-shadow: $box-shadow;
+}
+
+.related-product-grid {
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding: 0 15px;
+    padding-right: 0;
+}
+
+.related-product-element {
+    box-shadow: $box-shadow;
+}
+
+.content-element-grid {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+@media(max-width: 991px) {
+    .features-grid,
+    .related-product-grid {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        .features-list-element,
+        .content-element {
+            padding: 15px;
+        }
+
+    }
+
+    .content-element-grid {
+        padding: 0;
+        .content-element {
+            padding: 15px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .content-element-grid {
+        h4 {
+            -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+            max-width: 40%;
+        }
+
+        h4 {
+            -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+            max-width: 60%
+        }
+    }
+}
